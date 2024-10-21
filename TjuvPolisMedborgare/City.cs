@@ -15,7 +15,6 @@ namespace TjuvPolisMedborgare
         public int NumOfCitizens { get; set; }
         public int Arrests { get; set; }
         public int Robberies { get; set; }
-        public List<string> Messages { get; set; }
         public List<Person> People { get; set; }
 
         public City(int width, int height, int numOfTheifes, int numOfPolices, int numOfCitizens)
@@ -27,7 +26,6 @@ namespace TjuvPolisMedborgare
             NumOfCitizens = numOfCitizens;
             Arrests = 0;
             Robberies = 0;
-            Messages = new List<string>();
             People = new List<Person>();
 
             CreatePeople();
