@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace TjuvPolisMedborgare
 {
@@ -62,7 +63,6 @@ namespace TjuvPolisMedborgare
                     seizedItems.AddRange(thief.loot);
                     thief.loot.Clear();
                     Console.WriteLine(Helpers.Arrest + "och tar allt stöldgods ");
-                    Thread.Sleep(2000);
                 }
                 else
                 {
