@@ -135,7 +135,7 @@ namespace TjuvPolisMedborgare
             }
         }
 
-        private string HandleCollisions()
+        public string HandleCollisions()
         {
             // loopar över alla personer och kollar om någon kolliderar med någon annan
             for (int i = 0; i < People.Count; i++)

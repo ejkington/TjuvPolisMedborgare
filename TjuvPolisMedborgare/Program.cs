@@ -20,7 +20,7 @@ namespace TjuvPolisMedborgare
                 Console.WriteLine("Antal gripna tjuvar: " + city.Arrests);
                 Console.WriteLine("Antal rånade medborgare: " + city.Robberies);
                
-                Thread.Sleep(500);
+                Thread.Sleep(800);
             }
         }
     }
