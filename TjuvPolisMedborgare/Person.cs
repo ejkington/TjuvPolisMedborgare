@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using Microsoft.VisualBasic;
 
 namespace TjuvPolisMedborgare
 {
@@ -41,7 +42,7 @@ namespace TjuvPolisMedborgare
         public virtual void Interact(Person other)
         {
             // Måste finnas 
-        }
+        }     
     }
 
     class Police : Person

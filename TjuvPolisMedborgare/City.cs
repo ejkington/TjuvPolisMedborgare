@@ -48,16 +48,20 @@ namespace TjuvPolisMedborgare
             {
                 if (person is Thief)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     cityGrid[person.Y, person.X] = 'T'; // Tjuv
                 }
                 else if (person is Police)
                 {
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     cityGrid[person.Y, person.X] = 'P'; // Polis
                 }
                 else if (person is Citizen)
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     cityGrid[person.Y, person.X] = 'M'; // Medborgare
                 }
+                Console.ResetColor(); 
             }
 
             // Rita ut staden
@@ -146,7 +150,8 @@ namespace TjuvPolisMedborgare
                     {
                         person1.Interact(person2);
                         person2.Interact(person1);
-
+                        
+                       
                         // Skriv ut meddelanden beroende på vad som händer
                         if (person1 is Thief && person2 is Citizen)
                         {
@@ -158,20 +163,17 @@ namespace TjuvPolisMedborgare
                             Arrests++;
                             People.Remove(person2); // Tjuven tas bort från staden
                             return Helpers.Arrest;
-
                         }
                         else if (person1 is Citizen && person2 is Thief)
                         {
                             Robberies++;
                             return Helpers.Robbery;
-
                         }
                         else if (person1 is Thief && person2 is Police)
                         {
                             Arrests++;
                             People.Remove(person1); // Tjuven tas bort från staden
                             return Helpers.Arrest;
-
                         }
                     }
                 }
