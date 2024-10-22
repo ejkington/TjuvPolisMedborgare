@@ -110,10 +110,9 @@ namespace TjuvPolisMedborgare
     {
         public List<string> belongings { get; set; }
 
-        // Konstruktor som sätter default tillhörigheter
         public Citizen(int x, int y, int xDir, int yDir) : base(x, y, xDir, yDir)
         {
-            // Initiera belongings-listan med några föremål
+           
             belongings = new List<string> { "klocka", "plånbok", "nycklar", "mobiltelefon" };
         }
         public override void Interact(Person person)

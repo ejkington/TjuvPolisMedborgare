@@ -15,12 +15,11 @@ namespace TjuvPolisMedborgare
                 city.Simulate(1);
                 city.UpdateCity();
 
-
                 Console.WriteLine("STATUS: ");
                 Console.WriteLine("Antal gripna tjuvar: " + city.Arrests);
                 Console.WriteLine("Antal rånade medborgare: " + city.Robberies);
-               
-                Thread.Sleep(800);
+                
+                Thread.Sleep(1500);
             }
         }
     }

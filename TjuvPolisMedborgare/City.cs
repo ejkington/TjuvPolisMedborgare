@@ -67,11 +67,12 @@ namespace TjuvPolisMedborgare
                 {
                     Console.Write(cityGrid[y, x]);
                 }
+               
                 Console.WriteLine();
             }
         }
 
-        private void CreatePeople()
+        public void CreatePeople()
         {
             Random random = new Random();
 
