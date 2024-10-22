@@ -48,20 +48,16 @@ namespace TjuvPolisMedborgare
             {
                 if (person is Thief)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
                     cityGrid[person.Y, person.X] = 'T'; // Tjuv
                 }
                 else if (person is Police)
                 {
-                    Console.ForegroundColor = ConsoleColor.Blue;
                     cityGrid[person.Y, person.X] = 'P'; // Polis
                 }
                 else if (person is Citizen)
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
                     cityGrid[person.Y, person.X] = 'M'; // Medborgare
                 }
-                Console.ResetColor(); 
             }
 
             // Rita ut staden
